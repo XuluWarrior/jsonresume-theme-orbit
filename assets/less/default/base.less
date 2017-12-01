@@ -1,3 +1,5 @@
+@sidebar-width: 240px;
+
 /* ======= Base ======= */
 body {
     font-family: 'Roboto', sans-serif;  
@@ -41,7 +43,7 @@ p {
     background: @theme-color;
     position: absolute;
     right: 0;
-    width: 240px;
+    width: @sidebar-width;
     height: 100%;
     min-height: 800px;
     color: #fff;
@@ -153,7 +155,7 @@ p {
 .main-wrapper {
     background: #fff;
     padding: 60px;
-    padding-right: 300px;
+    padding-right: @sidebar-width + 60px;
     .section-title {
         text-transform: uppercase;
         font-size: 20px;
