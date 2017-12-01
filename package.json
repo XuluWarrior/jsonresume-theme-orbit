@@ -17,7 +17,8 @@
     "build:styles:6": "lessc assets/less/theme-6/styles.less assets/css/styles.css"
   },
   "dependencies": {
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "helper-markdown": "^1.0.0"
   },
   "devDependencies": {
     "less": "^2.7.3"

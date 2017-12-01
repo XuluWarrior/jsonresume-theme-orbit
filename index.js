@@ -1,7 +1,9 @@
 var fs = require("fs");
 var path = require('path');
 var Handlebars = require("handlebars");
+var markdown = require('helper-markdown');
 
+Handlebars.registerHelper('markdown', markdown());
 
 Handlebars.registerHelper('displayUrl', function(str) {
 	return str.replace(/https?:\/\//, "");

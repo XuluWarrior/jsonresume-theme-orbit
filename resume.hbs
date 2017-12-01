@@ -92,7 +92,7 @@
                 <section class="section summary-section">
                     <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
                     <div class="summary">
-                        <p>{{resume.basics.summary}}</p>
+                        <p>{{#markdown}}{{resume.basics.summary}}{{/markdown}}</p>
                     </div><!--//summary-->
                 </section><!--//section-->
             {{/if}}
@@ -111,7 +111,7 @@
                                 <div class="company">{{name}}, {{location}}</div>
                             </div><!--//meta-->
                             <div class="details">
-                                <p>{{summary}}</p>
+                                {{#markdown}}{{summary}}{{/markdown}}
                             </div><!--//details-->
                         </div><!--//item-->
                     {{/resume.work}}
@@ -127,7 +127,7 @@
                     {{#resume.projects}}
                         <div class="item">
                             <span class="project-title"><a href="{{url}}" target="_blank">{{name}}</a></span> -
-                            <span class="project-tagline">{{description}}</span>
+                            <span class="project-tagline">{{#markdown}}{{description}}{{/markdown}}</span>
                         </div><!--//item-->
                     {{/resume.projects}}
                 </section><!--//section-->
