@@ -156,6 +156,7 @@ p {
   background: #fff;
   padding: 60px;
   padding-right: 300px;
+  min-height: 800px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
