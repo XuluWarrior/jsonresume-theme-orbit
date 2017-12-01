@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-orbit",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "description": "Theme for JSON Resume based on Orbit design by xriley",
   "author": "XuluWarrior",
   "repository": {
@@ -8,6 +8,10 @@
     "url": "https://github.com/XuluWarrior/jsonresume-theme-orbit.git"
   },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XuluWarrior/jsonresume-theme-orbit/issues"
+  },
+  "homepage": "https://github.com/XuluWarrior/jsonresume-theme-orbit",
   "scripts": {
     "build:styles": "lessc assets/less/default/styles.less assets/css/styles.css",
     "build:styles:2": "lessc assets/less/theme-2/styles.less assets/css/styles.css",
