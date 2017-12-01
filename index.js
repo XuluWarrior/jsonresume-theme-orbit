@@ -49,20 +49,20 @@ function render(resume) {
 	var css = fs.readFileSync(__dirname + "/assets/css/styles.css", "utf-8");
 	var js = fs.readFileSync(__dirname + "/assets/js/main.js", "utf-8");
 	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
-	var partialsDir = path.join(__dirname, 'partials');
-	var filenames = fs.readdirSync(partialsDir);
-
-	filenames.forEach(function (filename) {
-	  var matches = /^([^.]+).hbs$/.exec(filename);
-	  if (!matches) {
-	    return;
-	  }
-	  var name = matches[1];
-	  var filepath = path.join(partialsDir, filename);
-	  var template = fs.readFileSync(filepath, 'utf8');
-
-	  Handlebars.registerPartial(name, template);
-	});
+	//var partialsDir = path.join(__dirname, 'partials');
+	//var filenames = fs.readdirSync(partialsDir);
+    //
+	//filenames.forEach(function (filename) {
+	//  var matches = /^([^.]+).hbs$/.exec(filename);
+	//  if (!matches) {
+	//    return;
+	//  }
+	//  var name = matches[1];
+	//  var filepath = path.join(partialsDir, filename);
+	//  var template = fs.readFileSync(filepath, 'utf8');
+    //
+	//  Handlebars.registerPartial(name, template);
+	//});
 	return Handlebars.compile(tpl)({
 		css: css,
 		js: js,

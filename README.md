@@ -1,6 +1,6 @@
-# Boilerplate theme [![](https://badge.fury.io/js/jsonresume-theme-boilerplate.svg)](https://www.npmjs.org/package/jsonresume-theme-boilerplate)
+# JSON Resume Orbit Theme 
 
-This is the boilerplate theme for [JSON Resume](http://jsonresume.org/).
+This is a theme for [JSON Resume](http://jsonresume.org/) based on [Orbit design](https://github.com/xriley/Orbit-Theme) by [xriley](https://github.com/xriley).
 
 ## Getting started
 
