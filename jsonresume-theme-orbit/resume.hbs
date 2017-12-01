@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+        <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Responsive HTML5 Developer Resume {{#resume.basics}}for {{name}}{{/resume.basics}}">
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <!-- Global CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">        <!-- Plugins CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- Theme CSS -->
+        <style>
+                {{{css}}}
+        </style>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+
+            {{#resume.basics}}
+            <div class="profile-container">
+                <img class="profile" src="{{image}}" alt="" />
+                <h1 class="name">{{name}}</h1>
+                <h3 class="tagline">{{label}}</h3>
+            </div><!--//profile-container-->
+
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    {{#if email}}<li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{email}}">{{email}}</a></li>{{/if}}
+                    {{#if phone}}<li class="phone"><i class="fa fa-phone"></i><a href="tel:{{phone}}">{{phone}}</a></li>{{/if}}
+                    {{#if url}}<li class="website"><i class="fa fa-globe"></i><a href="{{url}}" target="_blank">{{displayUrl url}}</a></li>{{/if}}
+
+                    {{#each profiles}}
+                        <li class="{{toLowerCase network}}"><i class="fa fa-{{toLowerCase network}}"></i><a href="{{url}}" target="_blank">{{#if url}}{{displayUrl url}}{{else}}@{{username}}{{/if}}</a></li>
+                    {{/each}}
+<!--                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>  -->
+                </ul>
+            </div><!--//contact-container-->
+            {{/resume.basics}}
+
+            {{#if resume.education}}
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                {{#resume.education}}
+                <div class="item">
+                    <h4 class="degree">{{award studyType}} in {{area}}</h4>
+                    <h5 class="meta">{{institution}}</h5>
+                    <div class="time">{{year startDate}} - {{year endDate}}</div>
+                </div><!--//item-->
+                {{/resume.education}}
+            </div><!--//education-container-->
+            {{/if}}
+
+            {{#if resume.languages}}
+                <div class="languages-container container-block">
+                    <h2 class="container-block-title">Languages</h2>
+                    <ul class="list-unstyled interests-list">
+                        {{#resume.languages}}
+                            <li>{{language}} <span class="lang-desc">({{fluency}})</span></li>
+                        {{/resume.languages}}
+                    </ul>
+                </div><!--//interests-->
+            {{/if}}
+
+            {{#if resume.interests}}
+                <div class="interests-container container-block">
+                    <h2 class="container-block-title">Interests</h2>
+                    <ul class="list-unstyled interests-list">
+                        {{#resume.interests}}
+                            <li>{{name}}</li>
+                        {{/resume.interests}}
+                    </ul>
+                </div><!--//interests-->
+            {{/if}}
+
+        </div><!--//sidebar-wrapper-->
+
+        <div class="main-wrapper">
+
+            {{#if resume.basics.summary}}
+                <section class="section summary-section">
+                    <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+                    <div class="summary">
+                        <p>{{resume.basics.summary}}</p>
+                    </div><!--//summary-->
+                </section><!--//section-->
+            {{/if}}
+
+            {{#if resume.work}}
+                <section class="section experiences-section">
+                    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+
+                    {{#resume.work}}
+                        <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title">{{position}}</h3>
+                                    <div class="time">{{year startDate}} - {{year endDate}}</div>
+                                </div><!--//upper-row-->
+                                <div class="company">{{name}}, {{location}}</div>
+                            </div><!--//meta-->
+                            <div class="details">
+                                <p>{{summary}}</p>
+                            </div><!--//details-->
+                        </div><!--//item-->
+                    {{/resume.work}}
+                </section><!--//section-->
+            {{/if}}
+
+            {{#if resume.projects}}
+                <section class="section projects-section">
+                    <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+<!--                    <div class="intro">
+                        <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                    </div>--><!--//intro-->
+                    {{#resume.projects}}
+                        <div class="item">
+                            <span class="project-title"><a href="{{url}}" target="_blank">{{name}}</a></span> -
+                            <span class="project-tagline">{{description}}</span>
+                        </div><!--//item-->
+                    {{/resume.projects}}
+                </section><!--//section-->
+            {{/if}}
+
+            {{#if resume.skills}}
+                <section class="skills-section section">
+                    <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+                    <div class="skillset">
+                        {{#resume.skills}}
+                            <div class="item">
+                                <h3 class="level-title">{{name}}</h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="{{skillLevel level}}">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+                        {{/resume.skills}}
+
+                    </div>
+                </section><!--//skills-section-->
+            {{/if}}
+
+
+        </div><!--//main-body-->
+    </div>
+
+    <footer class="footer">
+        <div class="text-center">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script type="text/javascript">
+            {{{js}}}
+    </script>
+    </body>
+</html>
