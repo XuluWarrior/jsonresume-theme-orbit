@@ -1,20 +1,20 @@
-{{#if resume.work}}
+{{#if resume.volunteer}}
     <section class="section experiences-section">
-        <h2 class="section-title"><i class="fa fa-briefcase"></i>Work Experience</h2>
+        <h2 class="section-title"><i class="fa fa-handshake-o"></i>Volunteer Work</h2>
 
-        {{#resume.work}}
+        {{#resume.volunteer}}
             <div class="item">
                 <div class="meta">
                     <div class="upper-row">
                         <h3 class="job-title">{{position}}</h3>
                         <div class="time">{{year startDate}} - {{year endDate}}</div>
                     </div><!--//upper-row-->
-                    <div class="company">{{#if url}}<a href="{{url}}" target="_blank">{{/if}}{{name}}{{#if location}}, {{location}}{{/if}}{{#if url}}</a>{{/if}}</div>
+                    <div class="company">{{#if url}}<a href="{{url}}" target="_blank">{{/if}}{{organization}}{{#if url}}</a>{{/if}}</div>
                 </div><!--//meta-->
                 <div class="details">
                     {{#markdown}}{{summary}}{{/markdown}}
                 </div><!--//details-->
             </div><!--//item-->
-        {{/resume.work}}
+        {{/resume.volunteer}}
     </section><!--//section-->
 {{/if}}
