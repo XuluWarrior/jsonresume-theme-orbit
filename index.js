@@ -3,7 +3,15 @@ var path = require('path');
 var Handlebars = require("handlebars");
 var markdown = require('helper-markdown');
 
-Handlebars.registerHelper('markdown', markdown());
+Handlebars.registerHelper('markdown', function() {
+	var markup = markdown().apply(this, arguments);
+
+	// If we end up with a string wrapped in one <p> block, remove it so we don't create a new text block
+	var startEndMatch = markup.match(/^<p>(.*)<\/p>\n$/);
+	return startEndMatch && startEndMatch[1].indexOf("<p>") === -1 ?
+		startEndMatch[1] :
+		markup;
+});
 
 Handlebars.registerHelper('displayUrl', function(str) {
 	return str.replace(/https?:\/\//, "");
