@@ -1,0 +1,14 @@
+{{#if resume.projects}}
+    <section class="section projects-section">
+        <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+        <!--                    <div class="intro">
+                                <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                            </div>--><!--//intro-->
+        {{#resume.projects}}
+            <div class="item">
+                <span class="project-title"><a href="{{url}}" target="_blank">{{name}}</a></span> -
+                <span class="project-tagline">{{#markdown}}{{description}}{{/markdown}}</span>
+            </div><!--//item-->
+        {{/resume.projects}}
+    </section><!--//section-->
+{{/if}}

@@ -1,0 +1,20 @@
+{{#resume.basics}}
+    <div class="profile-container">
+        <img class="profile" src="{{image}}" alt="" />
+        <h1 class="name">{{name}}</h1>
+        <h3 class="tagline">{{label}}</h3>
+    </div><!--//profile-container-->
+
+    <div class="contact-container container-block">
+        <ul class="list-unstyled contact-list">
+            {{#if email}}<li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{email}}">{{email}}</a></li>{{/if}}
+            {{#if phone}}<li class="phone"><i class="fa fa-phone"></i><a href="tel:{{phone}}">{{phone}}</a></li>{{/if}}
+            {{#if url}}<li class="website"><i class="fa fa-globe"></i><a href="{{url}}" target="_blank">{{displayUrl url}}</a></li>{{/if}}
+
+            {{#each profiles}}
+                <li class="{{toLowerCase network}}"><i class="fa fa-{{toLowerCase network}}"></i><a href="{{url}}" target="_blank">{{#if url}}{{displayUrl url}}{{else}}@{{username}}{{/if}}</a></li>
+            {{/each}}
+            <!--                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>  -->
+        </ul>
+    </div><!--//contact-container-->
+{{/resume.basics}}

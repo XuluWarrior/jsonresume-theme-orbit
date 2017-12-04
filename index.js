@@ -88,20 +88,21 @@ function render(resume) {
 
 	fixResume(resume);
 
-	//var partialsDir = path.join(__dirname, 'partials');
-	//var filenames = fs.readdirSync(partialsDir);
-    //
-	//filenames.forEach(function (filename) {
-	//  var matches = /^([^.]+).hbs$/.exec(filename);
-	//  if (!matches) {
-	//    return;
-	//  }
-	//  var name = matches[1];
-	//  var filepath = path.join(partialsDir, filename);
-	//  var template = fs.readFileSync(filepath, 'utf8');
-    //
-	//  Handlebars.registerPartial(name, template);
-	//});
+	var partialsDir = path.join(__dirname, 'partials');
+	var filenames = fs.readdirSync(partialsDir);
+
+	filenames.forEach(function (filename) {
+	  var matches = /^([^.]+).hbs$/.exec(filename);
+	  if (!matches) {
+	    return;
+	  }
+	  var name = matches[1];
+	  var filepath = path.join(partialsDir, filename);
+	  var template = fs.readFileSync(filepath, 'utf8');
+
+	  Handlebars.registerPartial(name, template);
+	});
+
 	return Handlebars.compile(tpl)({
 		css: css,
 		js: js,

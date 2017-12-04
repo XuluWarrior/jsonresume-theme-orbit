@@ -1,0 +1,12 @@
+{{#if resume.education}}
+    <div class="education-container container-block">
+        <h2 class="container-block-title">Education</h2>
+        {{#resume.education}}
+            <div class="item">
+                <h4 class="degree">{{award studyType}} in {{area}}</h4>
+                <h5 class="meta">{{institution}}</h5>
+                <div class="time">{{year startDate}} - {{year endDate}}</div>
+            </div><!--//item-->
+        {{/resume.education}}
+    </div><!--//education-container-->
+{{/if}}
