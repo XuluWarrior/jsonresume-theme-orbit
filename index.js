@@ -67,6 +67,8 @@ function fixResume(resume) {
 	fixAllEntries(resume.volunteer);
 	fixAllEntries(resume.publications);
 	fixAllEntries(resume.projects);
+
+	fixWork(resume.work);
 }
 
 function fixAllEntries(entries) {
@@ -78,6 +80,20 @@ function fixAllEntries(entries) {
 				delete entry.website;
 			}
 		}
+	}
+}
+
+// work.company has been renamed as work.name in v1.0.0
+function fixWork(work) {
+	if (work) {
+		for (var i=0; i < work.length; i++) {
+			var entry = work[i];
+			if (entry.company) {
+				entry.name = entry.company;
+				delete entry.website;
+			}
+		}
+
 	}
 }
 
