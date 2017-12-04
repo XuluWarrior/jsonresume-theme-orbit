@@ -55,10 +55,39 @@ Handlebars.registerHelper('skillLevel', function(str) {
 	}
 });
 
+// Resume.json used to have website property in some entries.  This has been renamed to url.
+// However the demo data still uses the website property so we will also support the "wrong" property name.
+// Fix the resume object to use url property
+function fixResume(resume) {
+	if (resume.basics.website) {
+		resume.basics.url = resume.basics.website;
+		delete resume.basics.website
+	}
+	fixAllEntries(resume.work);
+	fixAllEntries(resume.volunteer);
+	fixAllEntries(resume.publications);
+	fixAllEntries(resume.projects);
+}
+
+function fixAllEntries(entries) {
+	if (entries) {
+		for (var i=0; i < entries.length; i++) {
+			var entry = entries[0];
+			if (entry.website) {
+				entry.url = entry.website;
+				delete entry.website;
+			}
+		}
+	}
+}
+
 function render(resume) {
 	var css = fs.readFileSync(__dirname + "/assets/css/styles.css", "utf-8");
 	var js = fs.readFileSync(__dirname + "/assets/js/main.js", "utf-8");
 	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
+
+	fixResume(resume);
+
 	//var partialsDir = path.join(__dirname, 'partials');
 	//var filenames = fs.readdirSync(partialsDir);
     //
