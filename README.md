@@ -1,6 +1,14 @@
 # JSON Resume Orbit Theme 
 
 This is a theme for [JSON Resume](http://jsonresume.org/) based on [Orbit design](https://github.com/xriley/Orbit-Theme) by [xriley](https://github.com/xriley).
+This version includes more sections than in the original design and also changes a couple of section titles.
+For a template that implements the original design see [jsonresume-theme-orbit-original](https://github.com/XuluWarrior/jsonresume-theme-orbit-original).
+
+[![Example resume](https://xuluwarrior.github.io/jsonresume-theme-orbit/resume.jpg)](https://xuluwarrior.github.io/jsonresume-theme-orbit/resume.html)
+
+## Differences
+The version of this theme on npm has a wider sidebar than the original design.  This is so that it can fit the longer profile urls used in the example resume.json from [jsonresume.org](https://jsonresume.org/).
+To use the original width (240px) run the template locally.  See **Editing template** for instructions.
 
 ## Getting started
 
