@@ -8,7 +8,7 @@ For a template that implements the original design see [jsonresume-theme-orbit-o
 
 ## Differences
 The version of this theme on npm has a wider sidebar than the original design.  This is so that it can fit the longer profile urls used in the example resume.json from [jsonresume.org](https://jsonresume.org/).
-To use the original width (240px) run the template locally.  See **Editing template** for instructions.
+To use the original width (240px) run the template locally.  See **Editing template** for instructions. 
 
 ## Getting started
 
