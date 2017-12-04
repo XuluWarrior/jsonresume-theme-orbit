@@ -1,0 +1,183 @@
+{
+  "basics": {
+    "name": "Alan Doe",
+    "label": "Full Stack Developer",
+    "image": "https://themes.3rdwavemedia.com/demo/orbit/assets/images/profile.png",
+    "email": "alan.doe@website.com",
+    "phone": "0123 456 789",
+    "url": "http://portfoliosite.com",
+    "summary": "Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can [download this free resume/CV template here](https://github.com/XuluWarrior/jsonresume-theme-orbit-original). Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "username",
+        "url": "https://linkedin.com/in/alandoe"
+      },
+      {
+        "network": "GitHub",
+        "username": "username",
+        "url": "https://github.com/username"
+      },
+      {
+        "network": "Twitter",
+        "username": "twittername",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Startup Hubs",
+      "location": "San Francisco",
+      "position": "Lead Developer",
+      "startDate": "2015-12-01",
+      "endDate": "",
+      "summary": "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+      "name": "Google",
+      "location": "London",
+      "position": "Senior Software Engineer",
+      "startDate": "2014-03-01",
+      "endDate": "2015-11-01",
+      "summary": "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+    },
+    {
+      "name": "Amazon",
+      "location": "London",
+      "position": "UI Developer",
+      "startDate": "2012-05-01",
+      "endDate": "2014-02-28",
+      "summary": "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "url": "http://coderdojo.example.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": [
+        "Awarded 'Teacher of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of London",
+      "area": "Computer Science",
+      "studyType": "MSc",
+      "startDate": "2011-09-01",
+      "endDate": "2012-06-01"
+    },
+    {
+      "institution": "Bristol University",
+      "area": "Applied Mathematics",
+      "studyType": "MSc",
+      "startDate": "2007-09-01",
+      "endDate": "2011-06-01"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python & Django",
+      "level": "98%"
+    },
+    {
+      "name": "Javascript & jQuery",
+      "level": "98%"
+    },
+    {
+      "name": "Angular",
+      "level": "98%"
+    },
+    {
+      "name": "HTML5 & CSS",
+      "level": "95%"
+    },
+    {
+      "name": "Ruby on Rails",
+      "level": "85%"
+    },
+    {
+      "name": "Sketch & Photoshop",
+      "level": "60%"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "French",
+      "fluency": "Professional"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Professional"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Climbing"
+    },
+    {
+      "name": "Snowboarding"
+    },
+    {
+      "name": "Cooking"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Velocity",
+      "description": "A responsive website template designed to help startups promote, market and sell their products.",
+      "url": "https://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/"
+    },
+    {
+      "name": "DevStudio",
+      "description": "A responsive website template designed to help web developers/designers market their services.",
+      "url": "http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/"
+    },
+    {
+      "name": "Tempo",
+      "description": "A responsive website template designed to help startups promote their products or services and to attract users & investors.",
+      "url": "http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/"
+    },
+    {
+      "name": "Atom",
+      "description": "A comprehensive website template solution for startups/developers to market their mobile apps.",
+      "url": "http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/"
+    },
+    {
+      "name": "Delta",
+      "description": "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps.",
+      "url": "http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
