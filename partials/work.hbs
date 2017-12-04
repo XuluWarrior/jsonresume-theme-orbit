@@ -9,7 +9,7 @@
                         <h3 class="job-title">{{position}}</h3>
                         <div class="time">{{year startDate}} - {{year endDate}}</div>
                     </div><!--//upper-row-->
-                    <div class="company">{{#if url}}<a href="{{url}}" target="_blank">{{/if}}{{name}}, {{location}}{{#if url}}</a>{{/if}}</div>
+                    <div class="company">{{#if url}}<a href="{{url}}" target="_blank">{{/if}}{{name}}{{#if location}}, {{location}}{{/if}}{{#if url}}</a>{{/if}}</div>
                 </div><!--//meta-->
                 <div class="details">
                     {{#markdown}}{{summary}}{{/markdown}}
