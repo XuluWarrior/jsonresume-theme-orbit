@@ -72,7 +72,7 @@ function fixResume(resume) {
 function fixAllEntries(entries) {
 	if (entries) {
 		for (var i=0; i < entries.length; i++) {
-			var entry = entries[0];
+			var entry = entries[i];
 			if (entry.website) {
 				entry.url = entry.website;
 				delete entry.website;
