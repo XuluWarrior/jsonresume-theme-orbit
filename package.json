@@ -18,7 +18,8 @@
     "build:styles:3": "lessc assets/less/theme-3/styles.less assets/css/styles.css",
     "build:styles:4": "lessc assets/less/theme-4/styles.less assets/css/styles.css",
     "build:styles:5": "lessc assets/less/theme-5/styles.less assets/css/styles.css",
-    "build:styles:6": "lessc assets/less/theme-6/styles.less assets/css/styles.css"
+    "build:styles:6": "lessc assets/less/theme-6/styles.less assets/css/styles.css",
+    "release:prepare": "npm version patch -m \"Release: %s\""
   },
   "dependencies": {
     "handlebars": "^4.0.11",
