@@ -6,10 +6,6 @@ For a template that implements the original design see [jsonresume-theme-orbit-o
 
 [![Example resume](https://xuluwarrior.github.io/jsonresume-theme-orbit/resume.jpg)](https://xuluwarrior.github.io/jsonresume-theme-orbit/resume.html)
 
-## Differences
-The version of this theme on npm has a wider sidebar than the original design.  This is so that it can fit the longer profile urls used in the example resume.json from [jsonresume.org](https://jsonresume.org/).
-To use the original width (240px) run the template locally.  See **Editing template** for instructions. 
-
 ## Getting started
 
 ### Install the command line
@@ -60,7 +56,7 @@ npm run build:styles
 ```
 
 ### Change width of sidebar
-If profile details are too wide for the sidebar (as with the example resume.json from [jsonresume.org](https://jsonresume.org/)) then edit **less/default/base.less** and change @sidebar-width
+If profile details are too wide for the sidebar (as with the v1.0 example resume.json from [jsonresume.org](https://jsonresume.org/)) then edit **less/default/base.less** and change @sidebar-width
 e.g.
 ```
 @sidebar-width: 300px;

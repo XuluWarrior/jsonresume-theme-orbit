@@ -1,10 +1,6 @@
 language: node_js
 node_js: '4'
 
-script:
-- 'sed -i ''s/sidebar-width: 240px/sidebar-width: 300px/'' assets/less/default/base.less'
-- npm run build:styles
-
 deploy:
   provider: npm
   email: npm@xuluwarrior.org
