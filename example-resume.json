@@ -173,10 +173,5 @@
       "description": "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps.",
       "url": "http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"
     }
-  ],
-  "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
-  }
+  ]
 }
