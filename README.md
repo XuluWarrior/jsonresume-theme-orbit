@@ -1,4 +1,5 @@
 # JSON Resume Orbit Theme 
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/XuluWarrior/jsonresume-theme-orbit)
 
 This is a theme for [JSON Resume](http://jsonresume.org/) based on [Orbit design](https://github.com/xriley/Orbit-Theme) by [xriley](https://github.com/xriley).
 This version includes more sections than in the original design and also changes a couple of section titles.
