@@ -11,10 +11,10 @@ install:
 
 script:
 - npm run build:styles
-- resume serve --resume=example-resume.json --silent &
+- resume serve --resume=example-resume.json --port 5001 --silent &
 - sleep 2s
 - mkdir resume
-- curl http://localhost:4000 > resume/example-resume.html
+- curl http://localhost:5001 > resume/example-resume.html
 - percy snapshot resume
 
 deploy:
