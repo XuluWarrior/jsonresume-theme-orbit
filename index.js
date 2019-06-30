@@ -1,12 +1,10 @@
 var fs = require("fs");
 var path = require('path');
 var Handlebars = require("handlebars");
-var utils = require('handlebars-utils');
-var marked = require('marked');
+var markdown = require('helper-markdown');
 
-Handlebars.registerHelper('markdown', function(val, locals, options) {
-	var str = utils.fn(val, locals, options);
-	var markup = marked(str);
+Handlebars.registerHelper('markdown', function() {
+	var markup = markdown().apply(this, arguments);
 
 	// If we end up with a string wrapped in one <p> block, remove it so we don't create a new text block
 	var startEndMatch = markup.match(/^<p>(.*)<\/p>\n$/);
