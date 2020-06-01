@@ -33,6 +33,6 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   }
 }
