@@ -2,7 +2,7 @@ var fs = require("fs");
 var path = require('path');
 var Handlebars = require("handlebars");
 var utils = require('handlebars-utils');
-var marked = require('marked');
+var marked = require('marked').marked;
 
 Handlebars.registerHelper('markdown', function(str, locals, options) {
 	if (typeof str !== 'string') {
