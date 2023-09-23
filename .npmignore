@@ -8,3 +8,4 @@ resume.json
 .DS_Store
 .idea/
 .envrc
+.tool-versions
