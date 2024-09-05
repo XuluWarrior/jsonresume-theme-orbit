@@ -113,7 +113,12 @@ function fixWork(work) {
 }
 
 function render(resume) {
-	const css = fs.readFileSync(__dirname + "/assets/css/styles.css", "utf-8");
+	const variant = parseInt(resume.meta?.themeVariant || "1");
+	if (isNaN(variant) || variant < 1 || variant > 6) {
+		throw "Invalid themeVariant.  Allowed values are 1 to 6"
+	}
+
+	const css = fs.readFileSync(__dirname + `/assets/css/styles-${variant}.css`, "utf-8");
 	const js = fs.readFileSync(__dirname + "/assets/js/main.js", "utf-8");
 	const tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
 
