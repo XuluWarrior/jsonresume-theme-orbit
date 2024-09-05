@@ -136,9 +136,9 @@ function render(resume) {
 
 	const packageJSON = require("./package");
 	return Handlebars.compile(tpl)({
-		css: css,
-		js: js,
-		resume: resume,
+		css,
+		js,
+		resume,
 		meta: {
 			packageName: packageJSON.name,
 			version:  packageJSON.version
