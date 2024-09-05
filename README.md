@@ -46,9 +46,15 @@ This will use the local version of the theme to render the resume.json
 If there is a local copy of resume.json this will be used.  Otherwise, it will use the default resume.json from [jsonresume.org](https://jsonresume.org/)
 
 ### Change color scheme
-This theme comes with 6 color schemes.  To change to an alternative run the build:styles script where 2 >= i <= 6
-```
-npm run build:styles:<i>
+This theme comes with 6 color schemes.  To change to an alternative add `themeVariant` to the meta in your resume.json. 
+Allowed values: 1 to 6
+
+e.g.
+```json
+"meta": {
+  "theme": "json-resume-orbit",
+  "themeVariant": 3
+}
 ```
 
 To revert to the default theme
