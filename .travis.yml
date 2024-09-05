@@ -14,7 +14,7 @@ cache:
     - "$HOME/.npm"
 
 script:
-- npm run build:styles
+- npm run build:styles:1
 - resume serve --theme . --resume=example-resume.json --port 5001 --silent &
 - sleep 2s
 - npx percy exec -- node tests/percy.js
