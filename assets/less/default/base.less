@@ -7,6 +7,7 @@ body {
     color: @text-color-secondary;
     background: @smoky-white;
     font-size: 14px;
+    line-height: 1.42857143;
     padding: 30px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -14,10 +15,12 @@ body {
 
 h1, h2, h3, h4, h5, h6  {
     font-weight: 700;
+    line-height: 1.1;
 }
 
 a {
     color: darken(@theme-color, 15%);
+    text-decoration: none;
     .transition (all 0.4s ease-in-out);
     &:hover {
         text-decoration: underline;
@@ -30,6 +33,11 @@ a {
 
 p {
     line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    margin-bottom: 10px;
 }
 
 .wrapper {
@@ -116,6 +124,7 @@ p {
         }
         .meta {
             color: rgba(256, 256, 256, 0.6);
+            font-size: 14px;
             font-weight: 500;
             margin-bottom: 0px;
             margin-top: 0;
