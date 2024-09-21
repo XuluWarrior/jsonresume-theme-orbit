@@ -1,5 +1,5 @@
 /* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
     
     .sidebar-wrapper {
         position: static;
@@ -29,7 +29,7 @@
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     
     .skillset .level-title {
         display: inline-block;
@@ -60,4 +60,14 @@
 
 }
 
+@media print {
+    html, body {
+        width: 1020px;
+        -webkit-print-color-adjust:exact !important;
+        print-color-adjust:exact !important;
+    }
+}
 
+.item {
+    break-inside: avoid;
+}
