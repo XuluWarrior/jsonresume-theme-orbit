@@ -267,7 +267,7 @@ ul {
   color: #fb866a;
 }
 /* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .sidebar-wrapper {
     position: static;
     width: inherit;
@@ -286,7 +286,7 @@ ul {
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .skillset .level-title {
     display: inline-block;
     float: left;
@@ -303,3 +303,14 @@ ul {
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
+@media print {
+  html,
+  body {
+    width: 1020px;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+.item {
+  break-inside: avoid;
+}
