@@ -166,7 +166,7 @@ module.exports = {
 				  -webkit-print-color-adjust: exact;
 				}
 			</style>
-			<div style="background: #f5f5f5; width: 100%; height: 30px"/>    
+			<div style="margin-top: -30px; background: #f5f5f5; width: 100%; height: 60px"/>    
 		`,
 		footerTemplate: `
 			<style>
@@ -174,7 +174,7 @@ module.exports = {
 				  -webkit-print-color-adjust: exact;
 				}
 			</style>
-			<div style="background: #f5f5f5; width: 100%; height: 30px"/>
+			<div style="margin-bottom: -15px; background: #f5f5f5; width: 100%; height: 30px"/>
 		`
 	}
 };
