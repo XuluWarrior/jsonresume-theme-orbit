@@ -9,6 +9,7 @@
         <ul class="list-unstyled contact-list">
             {{#if email}}<li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{email}}">{{email}}</a></li>{{/if}}
             {{#if phone}}<li class="phone"><i class="fa fa-phone"></i><a href="tel:{{phone}}">{{phone}}</a></li>{{/if}}
+            {{#if location}}<li class="location"><i class="fa fa-map-marker"></i><a href="{{locationUrl location}}" target="_blank">{{formatLocation location}}</a></li>{{/if}}
             {{#if url}}<li class="website"><i class="fa fa-globe"></i><a href="{{url}}" target="_blank">{{displayUrl url}}</a></li>{{/if}}
 
             {{#each profiles}}
