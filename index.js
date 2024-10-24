@@ -155,18 +155,9 @@ module.exports = {
 	render: render,
 	pdfRenderOptions: {
 		mediaType: 'print',
-		displayHeaderFooter: true,
 		margin: {
 			top: '30px',
 			bottom: '30px'
-		},
-		headerTemplate: `
-			<style>
-				html {
-				  -webkit-print-color-adjust: exact;
-				}
-			</style>
-			<div style="margin-top: -30px; background: #f5f5f5; width: 100%; height: 2000px"/>    
-		`
+		}
 	}
 };
