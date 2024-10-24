@@ -254,6 +254,22 @@ ul {
   height: 12px;
   background: #6c92a3;
 }
+.skillset .skill-name {
+  color: #3F4650;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.skillset .skill-keyword {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.2em 0.5em 0.3em;
+  border-radius: 2px;
+  background: #f5f5f5;
+  font-weight: 600;
+  margin: 0.25em 0.1em;
+}
 .footer {
   padding: 30px;
   padding-top: 60px;
