@@ -4,11 +4,18 @@
         <div class="skillset">
             {{#resume.skills}}
                 <div class="item">
-                    <h3 class="level-title">{{name}}</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="{{skillLevel level}}">
-                        </div>
-                    </div><!--//level-bar-->
+                    {{#if keywords}}
+                        <h3 class="skill-name">{{name}}</h3>
+                        {{#keywords}}
+                            <span class="skill-keyword">{{this}}</span>
+                        {{/keywords}}
+                    {{else}}
+                        <h3 class="level-title">{{name}}</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="{{skillLevel level}}">
+                            </div>
+                        </div><!--//level-bar-->
+                    {{/if}}
                 </div><!--//item-->
             {{/resume.skills}}
 
