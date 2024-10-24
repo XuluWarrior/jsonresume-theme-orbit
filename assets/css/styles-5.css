@@ -307,6 +307,7 @@ ul {
   html,
   body {
     width: 1020px;
+    background: white;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
