@@ -14,6 +14,13 @@
                 <div class="details">
                     {{#markdown}}{{summary}}{{/markdown}}
                 </div><!--//details-->
+                {{#if highlights}}
+                    <ul>
+                        {{#highlights}}
+                            <li>{{{markdown this}}}</li>
+                        {{/highlights}}
+                    </ul>
+                {{/if}}
             </div><!--//item-->
         {{/resume.work}}
     </section><!--//section-->
