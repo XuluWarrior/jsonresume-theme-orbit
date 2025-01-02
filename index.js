@@ -70,6 +70,23 @@ Handlebars.registerHelper('skillLevel', function(str) {
 	}
 });
 
+function formatLocation(locationDetails) {
+	const { postalCode, city, countryCode, region } = locationDetails;
+	const cityPlusCode = [city, postalCode].filter(value => !!value).join(" ")
+	return [cityPlusCode, region, countryCode ]
+		.filter(value => !!value)
+		.join(', ')
+}
+
+Handlebars.registerHelper('formatLocation', function(locationDetails) {
+	return formatLocation(locationDetails);
+});
+
+Handlebars.registerHelper('locationUrl', function(locationDetails) {
+	const locationString = formatLocation(locationDetails);
+	return `https://www.google.com/maps/place/${locationString.replace(/ /g, "+")}`;
+});
+
 // Resume.json used to have website property in some entries.  This has been renamed to url.
 // However the demo data still uses the website property so we will also support the "wrong" property name.
 // Fix the resume object to use url property

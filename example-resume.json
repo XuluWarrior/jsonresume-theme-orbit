@@ -6,6 +6,10 @@
     "email": "alan.doe@website.com",
     "phone": "0123 456 789",
     "url": "http://portfoliosite.com",
+    "location": {
+      "city": "San Francisco",
+      "countryCode": "US"
+    },
     "summary": "Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can [download this free resume/CV template here](https://github.com/XuluWarrior/jsonresume-theme-orbit-original). Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.",
     "profiles": [
       {
